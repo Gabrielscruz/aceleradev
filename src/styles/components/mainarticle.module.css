@@ -76,7 +76,7 @@ grid-column-gap: 1.5rem;
     margin-top: 20px;
     margin-bottom: 100px;
     display: grid;
-    height:350px;
+    height:550px;
     grid-template-areas: 
     "divleft"
     "divright";
@@ -88,7 +88,7 @@ grid-column-gap: 1.5rem;
     .divleft{  
       align-items: center;
       display: flex;
-      height:350px;
+      height:550px;
     }
     
     .divright{
@@ -113,7 +113,7 @@ grid-column-gap: 1.5rem;
     
     
     .divleft img{  
-      height:350px;
+      height:550px;
       width:100%;
       background-image: cover;
       border-top-right-radius: 0.5rem;

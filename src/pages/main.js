@@ -85,8 +85,8 @@ export default function Main() {
           </div>
           <nav className={styles.nav}>
             <button onClick={filteringhome}>HOME</button>
-            <button onClick={filteringback}>BACK END</button>
-            <button onClick={filteringfron}>FRONT END</button>
+            <button onClick={filteringback}>BACKEND</button>
+            <button onClick={filteringfron}>FRONTEND</button>
             <button onClick={filteringauto}>AUTOMAÇÃO</button>
           </nav>
         </div>
