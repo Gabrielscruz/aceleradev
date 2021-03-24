@@ -49,11 +49,11 @@
   }
   
   .article{
-    height:650px;
+    height:800px;
     margin-bottom: 1.5rem;
     border-radius:0.5rem;
     flex: 1;
-    background: var(--blue);
+    background: #132240;;
     display: grid;
     grid-template-rows: 2fr 2fr 100px ;
     font-family: Rajdhani;
@@ -63,7 +63,7 @@
   .thumbnail{
     border-top-left-radius:0.5rem;
     border-top-right-radius:0.5rem;
-    height: 450px;
+    height: 550px;
   }
   .title{
     align-items: center;
@@ -72,16 +72,16 @@
     color: var(--background);
     background:#132240;
     text-align: center;
-    font-size: 2.2rem;
-    padding: 1.2rem;
+    font-size: 2.8rem;
+    padding: 2.2rem;
   }
   
   .rodape{
     font-weight:600;
     color: var(--background);
     text-align: center;
-    font-size: 1rem;
-    padding: 1.2rem;
+    font-size: 2.5rem;
+    padding: 1.5rem;
     text-align: left;
   }
 
