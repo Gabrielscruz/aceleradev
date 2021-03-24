@@ -1,0 +1,261 @@
+.container{
+  background: var(--background);
+  display: grid;
+  max-width: 1280px;
+  margin: 1.5rem auto;
+  padding: 0 2rem;
+  grid-template-areas:
+  "header"
+  "section"
+  "footer";
+  grid-template-columns: auto;
+  grid-template-rows:  auto auto auto;
+}
+
+
+
+.header {
+  align-items: center;
+  display: flex;
+  grid-area: header;
+  padding: 0 2rem;
+}
+
+
+.section {
+  padding: 0 2rem;
+  grid-area: section;
+}
+
+.footer {
+  background: var(--background);
+  color: #333;
+  font-size: .8rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: Rajdhani;
+  grid-area:footer;
+}
+
+@media(min-width: 1080px){
+.containerArticle{
+  margin: 0 auto;
+  padding: 2.5rem 0 2.5rem 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.paginate{
+  margin: auto;
+  flex: 1;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr ;
+  flex-direction: row;
+}
+
+.paginate button{
+  margin: auto;
+  font-size: 2.5rem;
+  background: transparent;
+  color: var(--blue);
+  border-color: transparent;
+}
+
+.paginate button:hover{
+  color: var(--blue-dark);
+}
+
+.paginate span{
+  margin:auto;
+text-align: center;
+justify-content:center;
+align-items:center;
+display: grid;
+color: var(--background);
+width:40px;
+height:40px;
+border-radius: 50%;
+background-color: var(--blue);
+}
+
+
+.paginate button[disabled] {
+  opacity:0.5;
+  cursor: default;
+}
+.paginate button[disabled]:hover {
+  opacity:0.5;
+  color: var(--blue);
+  cursor: default;
+}
+}
+
+@media(max-width: 1079px){
+  .containerArticle{
+    margin-top: 50px;
+    padding: 2.5rem 0 2.5rem 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .paginate{
+    margin-top: 300px;
+    flex: 1;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    flex-direction: row;
+  }
+  
+  .paginate button{
+    margin: auto;
+    font-size: 2.5rem;
+    background: transparent;
+    color: var(--blue);
+    border-color: transparent;
+  }
+  
+  .paginate button:hover{
+    color: var(--blue-dark);
+  }
+  
+  .paginate span{
+    margin:auto;
+  text-align: center;
+  justify-content:center;
+  align-items:center;
+  display: grid;
+  color: var(--background);
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  }
+  
+  
+  .paginate button[disabled] {
+    opacity:0.5;
+    cursor: default;
+  }
+  .paginate button[disabled]:hover {
+    opacity:0.5;
+    color: var(--blue);
+    cursor: default;
+  }
+}
+
+
+@media(min-width: 1080px){
+  .navbar{
+    display:grid;
+    grid-template-areas:
+    "logodiv"
+    "nav";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+  }
+  
+  .logo{
+    width:140px;
+    height: 140px;
+  }
+  
+  .logodiv{  
+    align-items: center;
+    display: flex;
+  }
+  
+  .nav{
+    align-items: center;
+    display: flex;
+  }
+  
+  
+  .nav button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Rajdhani;
+    margin-left:  1.5rem;
+    color: var(--title);
+    background: none;
+    border: none;
+  }
+  
+  
+  .nav button:hover{
+  border-bottom: 1px solid var(--blue);
+  color: var(--red)
+  }
+  }
+  
+  @media(max-width: 1079px){
+    .navbar{
+      display:grid;
+      grid-template-areas:
+      "nav"
+      "logodiv";
+      grid-template-columns:4fr 1fr;
+      grid-template-rows: auto ;
+    }
+    
+   
+    
+    .logodiv{  
+      align-items: center;
+    }
+  
+    .logo{
+      width:140px;
+      height: 140px;
+    }
+    
+    .nav{
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    
+    .nav button{
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: Rajdhani;
+      margin-left:  1.5rem;
+      color: var(--title);
+      background: none;
+      border: none;
+    }
+    
+    
+    .nav button:hover{
+    border-bottom: 1px solid var(--blue);
+    color: var(--red)
+    }
+  
+  }
+  
+  
+.all{
+  font-size: 2.5rem;
+  color: var(--blue);
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}  
+
+.all:hover{
+  font-size: 2.5rem;
+  color: var(--red)
+}  

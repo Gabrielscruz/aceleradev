@@ -1,0 +1,150 @@
+@media(min-width: 1080px){
+.mainarticle{
+display: grid;
+height:450px;
+grid-template-areas: 
+"divleft"
+"divright";
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto ;
+grid-column-gap: 1.5rem;
+}
+
+
+.divleft{  
+  align-items: center;
+  display: flex;
+    height:450px;
+ 
+}
+
+.divright{
+  align-items: justify;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  height:450px;
+}
+
+
+
+.divleft img{  
+  height:450px;
+  width:100%;
+  background-image: cover;
+  border-radius: 0.5rem;
+}
+
+
+.divright a{
+  align-items: center;
+  text-align: center;
+  font-weight:600;
+  color: #000;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.divright  i {
+  display: flex;
+  align-items: CENTER;
+  justify-content: flex-end;
+  color: var(--blue);
+  text-align: right;
+}
+
+.divright p{
+  color: var(--blue-dark);
+  margin-bottom:0;
+  text-align: left;
+  align-items: left;
+}
+.divright button{
+  border: 0;
+  background-color:var(--blue);
+  border-radius:2.5rem;
+  padding: 0.5rem;
+  margin-right:10px;
+  color: var(--background);
+  cursor:  default ;
+}
+}
+
+@media(max-width: 1079px){
+  .mainarticle{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: grid;
+    height:350px;
+    grid-template-areas: 
+    "divleft"
+    "divright";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto ;
+    }
+    
+    
+    .divleft{  
+      align-items: center;
+      display: flex;
+      height:350px;
+    }
+    
+    .divright{
+      align-items: center;
+      text-align:center;
+      flex-direction: column;
+      background: var(--blue);
+      justify-content: space-evenly;
+      padding: 1.5rem;
+      display: flex;
+      border-bottom-right-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
+
+    .divright  i {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: var(--red);
+      text-align: right;
+    }
+    
+    
+    .divleft img{  
+      height:350px;
+      width:100%;
+      background-image: cover;
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+    }
+    
+    
+    .divright a{
+      align-items: center;
+      text-align: center;
+      font-weight:600;
+      color: #000;
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 0.5rem;
+    }
+    
+    .divright p{
+      color: var(--blue-dark);
+      margin-bottom:0;
+      padding: 1.5rem;
+      text-align: center;
+      align-items: center;
+    }
+    .divright button{
+      border: 0;
+      background-color:var(--blue);
+      border-radius:2.5rem;
+      padding: 0.5rem;
+      color: var(--background);
+      cursor:  default ;
+    }
+
+}

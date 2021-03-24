@@ -1,0 +1,30 @@
+.container{
+  padding:0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.container img{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  
+.all{
+  font-size: 2.5rem;
+  color: var(--blue);
+  text-align: left;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}  
+
+.all:hover{
+  font-size: 2.5rem;
+  color: var(--red)
+}  

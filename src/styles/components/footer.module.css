@@ -1,0 +1,53 @@
+.conteinerFooter{
+  margin: 0 auto;
+  padding: 2.5rem 0 2.5rem 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr ;
+  gap: 1rem;
+  flex-direction: column;
+  height:250px;
+}
+
+.left{
+  align-items:left;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+}
+
+.middle{
+  align-items:center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.right{
+  align-items:left;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  width:140px;
+  height: 140px;
+}
+
+
+.right > div{
+  align-items:left;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--red);
+  gap: 1rem;
+}
+
+
+.right > div  i:hover{
+  color: var(--blue);
+}

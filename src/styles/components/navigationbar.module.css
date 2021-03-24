@@ -1,0 +1,92 @@
+@media(min-width: 1080px){
+.navbar{
+  display:grid;
+  grid-template-areas:
+  "logodiv"
+  "nav";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto ;
+}
+
+.logo{
+  width:140px;
+  height: 140px;
+}
+
+.logodiv{  
+  align-items: center;
+  display: flex;
+}
+
+.nav{
+  align-items: center;
+  display: flex;
+}
+
+
+.nav button{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Rajdhani;
+  margin-left:  1.5rem;
+  color: var(--title);
+  background: none;
+  border: none;
+}
+
+
+.nav button:hover{
+border-bottom: 1px solid var(--blue);
+color: var(--red)
+}
+}
+
+@media(max-width: 1079px){
+  .navbar{
+    display:grid;
+    grid-template-areas:
+    "nav"
+    "logodiv";
+    grid-template-columns:4fr 1fr;
+    grid-template-rows: auto ;
+  }
+  
+ 
+  
+  .logodiv{  
+    align-items: center;
+  }
+
+  .logo{
+    width:140px;
+    height: 140px;
+  }
+  
+  .nav{
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .nav button{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Rajdhani;
+    margin-left:  1.5rem;
+    color: var(--title);
+    background: none;
+    border: none;
+  }
+  
+  
+  .nav button:hover{
+  border-bottom: 1px solid var(--blue);
+  color: var(--red)
+  }
+
+}
+
+

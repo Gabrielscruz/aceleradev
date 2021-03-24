@@ -1,0 +1,153 @@
+@media(min-width: 1080px){
+.blogcontent{
+  display: grid;
+  margin-top: 100px;
+  grid-template-areas: 
+  "divtag"
+  "divcontent";
+  grid-template-columns: auto ;
+  grid-template-rows: 50px 1fr ;
+  grid-column-gap: 0.5rem;
+}
+
+
+.divtag{  
+  align-items: center;
+  display: grid;
+  grid-template-columns: 200px 1fr ;
+  grid-column-gap: 1.5rem;
+}
+
+
+.divtag a{
+  border: 0;
+  border-radius:2.5rem;
+  padding: 0.5rem;
+  background: black;
+  color: var(--background);
+}
+.divtag{
+  text-align: center;
+}
+.divtext h1{
+  border: 0;
+  border-radius:2.5rem;
+  padding: 0.5rem;
+  font-size: 3rem;
+  font-family: Rajdhani;
+  text-align:center;
+  color: var(--title);
+  margin: 2.5rem;
+}
+
+.divtext p{
+  border: 0;
+  text-align:left;
+  font-size: 1.5rem;
+   white-space: pre-wrap ;
+  color: var(--title);
+}
+
+.divtext h3{
+  text-align: center;
+   font-family: Rajdhani;
+   font-size: 2rem;
+   margin: 1.5rem;
+}
+
+
+ .divtext .code{
+   background: var(--title);
+   font-family: Rajdhani;
+   padding: 0.5rem;
+   border-left: 5px solid var(--red); 
+   color: white;
+ }
+
+ .divtext iframe{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin:2.5rem auto 2.5rem auto;
+ }
+}
+
+
+@media(max-width: 1079px){
+
+  .blogcontent{
+    display: grid;
+    margin-top: 400px;
+    grid-template-areas: 
+    "divtag"
+    "divcontent";
+    grid-template-columns: auto ;
+    grid-template-rows: 50px 1fr ;
+    grid-column-gap: 0.5rem;
+  }
+  
+  
+  .divtag{  
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 1fr ;
+    grid-column-gap: 1.5rem;
+  }
+  
+  
+  .divtag a{
+    border: 0;
+    border-radius:2.5rem;
+    padding: 0.5rem;
+    background: black;
+    color: var(--background);
+  }
+  .divtag{
+    text-align: center;
+  }
+  .divtext h1{
+    border: 0;
+    border-radius:2.5rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+    font-family: Rajdhani;
+    text-align:justify;
+    color: var(--title);
+    margin: 2.5rem;
+  }
+  
+  .divtext p{
+    border: 0;
+    text-align:left;
+    font-size: 1.5rem;
+     white-space: pre-wrap ;
+    color: var(--title);
+  }
+  
+  .divtext h3{
+    text-align: center;
+     font-family: Rajdhani;
+     font-size: 2rem;
+     margin: 1.5rem;
+  }
+  
+  
+
+  
+   .divtext iframe{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin:2.5rem auto 2.5rem auto;
+   }
+}
+
+
+.divtext  span{
+  background: var(--title);
+  color: var(--background);
+  border: 1px solid var(--red);
+  padding: 0 5px 0 5px;
+  border-radius:2.5rem;
+}
+
