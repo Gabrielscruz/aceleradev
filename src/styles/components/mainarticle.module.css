@@ -76,7 +76,7 @@ grid-column-gap: 1.5rem;
     margin-top: 20px;
     margin-bottom: 100px;
     display: grid;
-    height:550px;
+    height:850px;
     grid-template-areas: 
     "divleft"
     "divright";
@@ -88,7 +88,8 @@ grid-column-gap: 1.5rem;
     .divleft{  
       align-items: center;
       display: flex;
-      height:550px;
+      height:850px;
+      font-size: 2.5rem;
     }
     
     .divright{
@@ -105,7 +106,9 @@ grid-column-gap: 1.5rem;
 
     .divright  i {
       display: flex;
+      padding: 1.5rem;
       align-items: center;
+      font-size: 2.5rem;
       justify-content: flex-end;
       color: var(--red);
       text-align: right;
@@ -113,7 +116,7 @@ grid-column-gap: 1.5rem;
     
     
     .divleft img{  
-      height:550px;
+      height:850px;
       width:100%;
       background-image: cover;
       border-top-right-radius: 0.5rem;
@@ -127,7 +130,7 @@ grid-column-gap: 1.5rem;
       font-weight:600;
       color: #000;
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
       padding: 0.5rem;
     }
     
@@ -144,6 +147,7 @@ grid-column-gap: 1.5rem;
       background-color:var(--blue);
       border-radius:2.5rem;
       padding: 0.5rem;
+      font-size: 2.5rem;
       color: var(--background);
       cursor:  default ;
     }
