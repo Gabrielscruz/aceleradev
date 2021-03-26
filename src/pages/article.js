@@ -12,11 +12,13 @@ export default function Article(props) {
   const [id] = useState(props.match.params.id);
   const [Loading, SetLoading] = useState(false);
 
+
   useEffect(() => {
     SetLoading(false)
     api.get(`/articles/${id}`).then(response => {
       SetArticleunique(response.data);
     })
+
     function timeLoading() {
       SetLoading(true)
     }

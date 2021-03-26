@@ -18,6 +18,7 @@ const exemple = [{
 }]
 
 
+
 export default function Main() {
   const [Page, SetPage] = useState(1);
   const [Type, SetType] = useState('')
@@ -45,7 +46,6 @@ export default function Main() {
   if (!Loading) {
     return <><LoadingM /></>
   }
-  console.log(ArticleInfo)
 
   const prevPage = () => {
     if (parseInt(ArticleInfo.page) === 1) return
@@ -68,6 +68,19 @@ export default function Main() {
   }
   const filteringauto = () => {
     SetType('AUTOMACAO')
+  }
+
+  function Paginate() {
+    if (ArticleAll.length !== 0) {
+      return (
+        <div className={styles.paginate} >
+          <button disabled={parseInt(ArticleInfo.page) === 1} onClick={prevPage}><i class="far fa-arrow-alt-circle-left"></i></button>
+          <span>{ArticleInfo.page}</span>
+          <button disabled={parseInt(ArticleInfo.page) === parseInt(ArticleInfo.pages)} onClick={nextPage}><i class="far fa-arrow-alt-circle-right"></i></button>
+        </div>)
+    } else {
+      return (<></>)
+    }
   }
 
 
@@ -94,11 +107,8 @@ export default function Main() {
 
       <section className={styles.section}>
         <Mainarticle ArticleM={ArticleMain} />
-        <div className={styles.paginate} >
-          <button disabled={parseInt(ArticleInfo.page) === 1} onClick={prevPage}><i class="far fa-arrow-alt-circle-left"></i></button>
-          <span>{ArticleInfo.page}</span>
-          <button disabled={parseInt(ArticleInfo.page) === parseInt(ArticleInfo.pages)} onClick={nextPage}><i class="far fa-arrow-alt-circle-right"></i></button>
-        </div>
+
+        <Paginate />
 
 
         <div className={styles.containerArticle}>
@@ -112,13 +122,7 @@ export default function Main() {
           })
           }
         </div>
-        <div className={styles.paginate} >
-          <button disabled={parseInt(ArticleInfo.page) === 1} onClick={prevPage}><i class="far fa-arrow-alt-circle-left"></i></button>
-          <span>{ArticleInfo.page}</span>
-          <button disabled={parseInt(ArticleInfo.page) === parseInt(ArticleInfo.pages)} onClick={nextPage}><i class="far fa-arrow-alt-circle-right"></i></button>
-        </div>
-
-
+        <Paginate />
       </section>
 
       <footer className={styles.footer}>
