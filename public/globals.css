@@ -54,10 +54,12 @@ a{
   background: var(--title);
   font-family: Rajdhani;
   padding: 0.5rem;
+  font-size: 14pt;
+  margin:0;
   border-left: 5px solid var(--red); 
   color: white;
 }
 
 #comen{
-  color: green;
+  color: var(--green);
 }
