@@ -44,6 +44,10 @@
   color: var(--title);
   margin: 2.5rem;
 }
+iframe{
+  height:500px; 
+  width:100%;
+  }
 
 .divtext p{
   border: 0;
@@ -90,7 +94,7 @@
     "divcontent";
     grid-template-columns: auto ;
     grid-template-rows: 50px 1fr ;
-    grid-column-gap: 1.5rem;
+    grid-column-gap: 1.2rem;
   }
   
   .divtag{  
@@ -115,6 +119,16 @@
   }
   .divtag{
     text-align: center;
+  }
+  iframe{
+  height:1000px; 
+  width:100%;
+  }
+  .divtext{
+    width: 1300px;
+  }
+  iframe{
+    display: none;
   }
   .divtext h1{
     border: 0;

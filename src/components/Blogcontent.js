@@ -18,7 +18,7 @@ export function Blogcontent(props) {
       </div>
       <div className={styles.divtext}>
 
-        <iframe height="500px" width="100%" src={`https://www.youtube.com/embed/${(urlyoutube ? urlyoutube : '')}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
+        <iframe src={`https://www.youtube.com/embed/${(urlyoutube ? urlyoutube : '')}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
         </iframe>
 
 
