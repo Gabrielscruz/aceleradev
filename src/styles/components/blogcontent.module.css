@@ -1,3 +1,4 @@
+
 @media(min-width: 1080px){
 .blogcontent{
   display: grid;
@@ -30,8 +31,9 @@
   text-align: center;
 }
 .divtext{
-  max-width: 1200px;
+  width: 1200px
 }
+
 .divtext h1{
   border: 0;
   border-radius:2.5rem;
@@ -88,10 +90,7 @@
     "divcontent";
     grid-template-columns: auto ;
     grid-template-rows: 50px 1fr ;
-    grid-column-gap: 0.5rem;
-  }
-  .divtext{
-    max-width: 1000px;
+    grid-column-gap: 1.5rem;
   }
   
   .divtag{  
