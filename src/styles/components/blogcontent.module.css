@@ -125,7 +125,7 @@ iframe{
   width:100%;
   }
   .divtext{
-    width: 1300px;
+    max-width: 1300px;
   }
   iframe{
     display: none;

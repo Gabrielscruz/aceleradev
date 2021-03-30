@@ -199,7 +199,7 @@ background-color: var(--blue);
   
   
   .nav button:hover{
-  border-bottom: 1px solid var(--blue);
+  border-bottom: 1.5px solid var(--blue);
   color: var(--red)
   }
   }
@@ -243,10 +243,12 @@ background-color: var(--blue);
       background: none;
       border: none;
     }
-    
+    .nav button i{
+      display:none;
+    }
     
     .nav button:hover{
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 2px solid var(--blue);
     color: var(--red)
     }
     

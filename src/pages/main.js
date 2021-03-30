@@ -96,11 +96,12 @@ export default function Main() {
           <div className={styles.logodiv}>
             <img className={styles.logo} src='https://aceleradev-backend.herokuapp.com/uploads/favicon.png' alt='logo' />
           </div>
+
           <nav className={styles.nav}>
-            <button onClick={filteringhome}>HOME</button>
-            <button onClick={filteringback}>BACKEND</button>
-            <button onClick={filteringfron}>FRONTEND</button>
-            <button onClick={filteringauto}>AUTOMAÇÃO</button>
+            <button onClick={filteringhome}><i class="fas fa-globe"></i> HOME</button>
+            <button onClick={filteringback}><i class="fas fa-database"></i> BACKEND</button>
+            <button onClick={filteringfron}><i class="fas fa-chalkboard"></i> FRONTEND</button>
+            <button onClick={filteringauto}><i class="fas fa-robot"></i> AUTOMAÇÃO</button>
           </nav>
         </div>
       </header>
