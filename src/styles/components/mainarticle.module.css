@@ -36,12 +36,11 @@ grid-column-gap: 1.5rem;
 }
 
 
-.divright a{
+.divright h4{
   align-items: center;
-  text-align: center;
+  text-align: left;
   font-weight:600;
   color: #000;
-  text-align: center;
   font-size: 2.5rem;
   padding: 0.5rem;
 }
@@ -134,7 +133,7 @@ grid-column-gap: 1.5rem;
       padding: 0.5rem;
     }
     
-    .divright p{
+    .divright h4{
       color: var(--blue-dark);
       margin-bottom:0;
       padding: 1.5rem;

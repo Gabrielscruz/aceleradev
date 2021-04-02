@@ -10,7 +10,7 @@ export function Mainarticle(props) {
       <Link to={_id ? `/articles/${_id}` : '/'} >
         <div className={styles.mainarticle}>
           <div className={styles.divleft}>
-            <img src={(thumbnail ? thumbnail : '')} alt="mainarticle" />
+            <img src={(thumbnail ? thumbnail : undefined)} alt="mainarticle" />
           </div>
 
           <div className={styles.divright}>
@@ -18,10 +18,10 @@ export function Mainarticle(props) {
               <button disabled><span>&#9733;</span> DESTAQUE</button>
             </div>
             <div className={styles.middle}>
-              <a >{(title ? title : '')}</a>
+              <h4>{(title ? title : undefined)}</h4>
             </div>
             <div className={styles.bottom}>
-              <p>por <strong>{(autor ? autor : '')}</strong> Data da postagem  {(datapost ? datapost : '').toString().substring(0, 10)}</p>
+              <p>por <strong>{(autor ? autor : undefined)}</strong> Data da postagem  {(datapost ? datapost : '').toString().substring(0, 10)}</p>
             </div>
           </div>
 

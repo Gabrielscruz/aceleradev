@@ -9,7 +9,7 @@ export function Articles(props) {
     <>
       <Link to={_id ? `/articles/${_id}` : ''} >
         <div className={styles.article}>
-          <img className={styles.thumbnail} src={thumbnail ? thumbnail : ''} width="100%" height="100%" />
+          <img alt={title} className={styles.thumbnail} src={thumbnail ? thumbnail : ''} width="100%" height="100%" />
           <div className={styles.title}>
             {title ? title : ''}
           </div>

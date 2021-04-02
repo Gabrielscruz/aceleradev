@@ -13,12 +13,11 @@ export function Blogcontent(props) {
   return (
     <div className={styles.blogcontent}>
       <div className={styles.divtag}>
-        <a target="_blank" href={urlgithub ? urlgithub : ''} ><i className="fab fa-github"></i> GitHub</a>
-        <h1></h1>
+        <a href={urlgithub ? urlgithub : undefined} ><i className="fab fa-github"></i> GitHub</a>
       </div>
       <div className={styles.divtext}>
 
-        <iframe src={`https://www.youtube.com/embed/${(urlyoutube ? urlyoutube : '')}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
+        <iframe title="Aceleradev_video_youtube" src={`https://www.youtube.com/embed/${(urlyoutube ? urlyoutube : '')}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
         </iframe>
 
 
