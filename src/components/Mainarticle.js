@@ -2,7 +2,7 @@ import styles from '../styles/components/mainarticle.module.css'
 import { Link } from 'react-router-dom';
 
 export function Mainarticle(props) {
-  const { autor, _id, datapost, thumbnail, title, } = props.ArticleM
+  const { autor, _id, datapost, thumbnail, title, previewamount } = props.ArticleM
 
 
   return (
@@ -15,7 +15,7 @@ export function Mainarticle(props) {
 
           <div className={styles.divright}>
             <div className={styles.top}>
-              <button disabled><span>&#9733;</span> DESTAQUE</button>
+              <button disabled>{(previewamount)}<span> &#128065;</span> Views</button>
             </div>
             <div className={styles.middle}>
               <h4>{(title ? title : undefined)}</h4>

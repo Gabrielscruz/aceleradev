@@ -7,6 +7,7 @@ grid-template-areas:
 "divright";
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto ;
+margin-bottom: 50px;
 grid-column-gap: 1.5rem;
 }
 
