@@ -1,5 +1,5 @@
 import styles from '../styles/components/footer.module.css'
-
+import Favicon from '../styles/imagens/favicon.png'
 
 export function Footer() {
   return (
@@ -9,7 +9,7 @@ export function Footer() {
       </div>
       <div className={styles.middle}>
 
-        <img alt="logo" className={styles.logo} src='https://aceleradev-backend.herokuapp.com/uploads/favicon.png' />
+        <img alt="logo" className={styles.logo} src={Favicon} />
         © 2021 Aceleradev - Todos os direitos reservados
       </div>
       <div className={styles.right}>

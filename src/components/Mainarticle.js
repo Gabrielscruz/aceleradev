@@ -1,5 +1,6 @@
 import styles from '../styles/components/mainarticle.module.css'
 import { Link } from 'react-router-dom';
+import Vazio from '../styles/imagens/vazio.png'
 
 export function Mainarticle(props) {
   const { autor, _id, datapost, thumbnail, title, previewamount } = props.ArticleM
@@ -10,7 +11,7 @@ export function Mainarticle(props) {
       <Link to={_id ? `/articles/${_id}` : '/'} >
         <div className={styles.mainarticle}>
           <div className={styles.divleft}>
-            <img src={(thumbnail ? thumbnail : undefined)} alt="mainarticle" />
+            <img src={(thumbnail ? thumbnail : Vazio)} alt="mainarticle" />
           </div>
 
           <div className={styles.divright}>

@@ -6,6 +6,7 @@ import { Footer } from '../components/Footer'
 import LoadingM from './loading'
 import api from '../service/api';
 import { useState, useEffect } from "react";
+import Favicon from '../styles/imagens/favicon.png'
 
 export default function Article(props) {
   const [Articleunique, SetArticleunique] = useState([]);
@@ -27,7 +28,7 @@ export default function Article(props) {
   }, [id]);
 
   if (!Loading) {
-    return <><LoadingM /></>
+    return <><LoadingM Width={'100px'} Img='https://aceleradev-backend.herokuapp.com/uploads/loading.gif' /></>
   }
 
 
@@ -40,7 +41,7 @@ export default function Article(props) {
       <header className={styles.header}>
         <div className={styles.navbar}>
           <div className={styles.logodiv}>
-            <img className={styles.logo} src='https://aceleradev-backend.herokuapp.com/uploads/favicon.png' alt='logo' />
+            <img className={styles.logo} src={Favicon} alt='Favicon' />
           </div>
           <nav className={styles.nav}>
             <Link to={'/'} >

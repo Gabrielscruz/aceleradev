@@ -1,5 +1,6 @@
 import styles from '../styles/pages/Loading.module.css'
 import { Link } from 'react-router-dom';
+import Img from '../styles/imagens/erro404.gif'
 
 export default function Erro404() {
   return (
@@ -9,7 +10,7 @@ export default function Erro404() {
           <i class="fas fa-reply-all"></i>
         </div>
       </Link>
-      <img width="500px" src='https://aceleradev-backend.herokuapp.com/uploads/erro404.gif' alt="Loading" />
+      <img width="500px" src={Img} alt="erro404" />
     </div>
   )
 }

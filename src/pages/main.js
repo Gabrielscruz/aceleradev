@@ -1,16 +1,19 @@
 import styles from '../styles/pages/Home.module.css';
 import LoadingM from './loading'
+import DatabaseIcon from '../styles/imagens/database.gif'
+import FrontendIcon from '../styles/imagens/Frontend.gif'
+import AutomacaoIcon from '../styles/imagens/Automacao.gif'
 import { Mainarticle } from '../components/Mainarticle'
 import { Articles } from '../components/Articles'
 import { Footer } from '../components/Footer'
 import api from '../service/api';
 import { useState, useEffect } from "react";
+import Favicon from '../styles/imagens/favicon.png'
 
 const exemple = [{
   autor: "GABRIEL DA SILVA CRUZ",
   content: "<p> Ola Dev's ainda não temos artigos</p>",
   datapost: "2021-03-21T20:36:15.224Z",
-  thumbnail: "https://aceleradev-backend.herokuapp.com/uploads/vazio.png",
   tipo: "SEM ARTIGO",
   title: "SEM ARTIGO ",
   urlgithub: "https://github.com/Gabrielscruz?tab=repositories",
@@ -26,6 +29,8 @@ export default function Main() {
   const [ArticleInfo, SetArticleInfo] = useState([]);
   const [ArticleMain, SetArticleMain] = useState([]);
   const [Loading, SetLoading] = useState(false);
+  const [IconeLoad, SetIconeLoad] = useState(['https://aceleradev-backend.herokuapp.com/uploads/loading.gif']);
+  const [Width, SetWidth] = useState('100px')
 
   useEffect(() => {
     SetLoading(false)
@@ -44,7 +49,7 @@ export default function Main() {
   }, [Page, Type]);
 
   if (!Loading) {
-    return <><LoadingM /></>
+    return <><LoadingM Width={Width} Img={IconeLoad} /></>
   }
 
   const prevPage = () => {
@@ -59,15 +64,23 @@ export default function Main() {
 
   const filteringhome = () => {
     SetType('')
+    SetIconeLoad('https://aceleradev-backend.herokuapp.com/uploads/loading.gif')
+    SetWidth('100px')
   }
   const filteringback = () => {
     SetType('BACKEND')
+    SetIconeLoad(DatabaseIcon)
+    SetWidth('550px')
   }
   const filteringfron = () => {
     SetType('FRONTEND')
+    SetIconeLoad(FrontendIcon)
+    SetWidth('550px')
   }
   const filteringauto = () => {
     SetType('AUTOMACAO')
+    SetIconeLoad(AutomacaoIcon)
+    SetWidth('550px')
   }
 
   function Paginate() {
@@ -94,7 +107,7 @@ export default function Main() {
       <header className={styles.header}>
         <div className={styles.navbar}>
           <div className={styles.logodiv}>
-            <img className={styles.logo} src='https://aceleradev-backend.herokuapp.com/uploads/favicon.png' alt='logo' />
+            <img className={styles.logo} src={Favicon} alt='logo' />
           </div>
 
           <nav className={styles.nav}>
