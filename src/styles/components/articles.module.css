@@ -53,7 +53,7 @@
     margin-bottom: 1.5rem;
     border-radius:0.5rem;
     flex: 1;
-    background: #132240;;
+    background: #132240;
     display: grid;
     grid-template-rows: 2fr 2fr 100px ;
     font-family: Rajdhani;

@@ -5,6 +5,7 @@ import FrontendIcon from '../styles/imagens/Frontend.gif'
 import AutomacaoIcon from '../styles/imagens/Automacao.gif'
 import { Mainarticle } from '../components/Mainarticle'
 import { Articles } from '../components/Articles'
+import { Suggestion } from '../components/Suggestion'
 import { Footer } from '../components/Footer'
 import api from '../service/api';
 import { useState, useEffect } from "react";
@@ -121,7 +122,7 @@ export default function Main() {
 
       <section className={styles.section}>
         <Mainarticle ArticleM={ArticleMain} />
-
+        <Suggestion />
         <Paginate />
 
 

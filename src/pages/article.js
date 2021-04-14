@@ -18,7 +18,7 @@ export default function Article(props) {
     SetLoading(false)
     api.get(`/articles/${id}`).then(response => {
       SetArticleunique(response.data);
-    })
+    }, [Article])
 
     function timeLoading() {
       SetLoading(true)
