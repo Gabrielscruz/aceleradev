@@ -28,3 +28,21 @@
   font-size: 2.5rem;
   color: var(--red)
 }  
+
+@media(max-width: 1079px){
+  .container{
+    padding:0;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+  }
+  .container img{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
