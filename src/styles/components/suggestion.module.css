@@ -61,6 +61,7 @@
   .container input{
     height: 100px;
     width: 550px;
+    font-size: 14pt;
     border: 1px solid #dcdccd;
     color: var(--title);
     padding: 5px;

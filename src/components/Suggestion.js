@@ -25,6 +25,7 @@ export function Suggestion() {
         });
 
       SetBackground('#4cd62b')
+      document.getElementById('send').value = 'Obrigado pela sua sugestão'
     }
 
   }
