@@ -10,12 +10,21 @@ export function Suggestion() {
     if (suggestion === '') {
       alert('Por favor Insira alguma informação')
     } else {
-      SetBackground('#4cd62b')
-      let ip = 'nao tem funcao'
-      let data = { ip, suggestion }
-      api.post('sugestao', data);
-      SetAcionado(true)
+      fetch('https://ipapi.co/json/')
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
 
+          let ip = data.ip
+          let code = data.region_code
+          let city = data.city
+          let database = { ip, suggestion, code, city }
+          api.post('sugestao', database);
+          SetAcionado(true)
+        });
+
+      SetBackground('#4cd62b')
     }
 
   }

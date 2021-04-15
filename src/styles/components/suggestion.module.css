@@ -48,6 +48,30 @@
     display: none;
   }
   .container{
-    margin-top: 30rem;
+    margin-top: 20rem;
+  }
+
+  .suggestion{
+    height: 100px;
+    margin:auto;
+    background: var(--background);
+    width: 660px;
+  }
+  
+  .container input{
+    height: 100px;
+    width: 550px;
+    border: 1px solid #dcdccd;
+    color: var(--title);
+    padding: 5px;
+  }
+  
+  .container button{
+    height:100px;
+    width: 110px;
+    border: none;
+    background: var(--blue);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 }
