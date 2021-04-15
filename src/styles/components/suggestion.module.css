@@ -52,23 +52,24 @@
   }
 
   .suggestion{
-    height: 100px;
+    height: 130px;
     margin:auto;
     background: var(--background);
     width: 660px;
   }
   
   .container input{
-    height: 100px;
+    height: 130px;
     width: 550px;
-    font-size: 14pt;
+    font-size: 1.6rem;
     border: 1px solid #dcdccd;
     color: var(--title);
     padding: 5px;
   }
   
   .container button{
-    height:100px;
+    height:130px;
+    font-size: 1.5rem;
     width: 110px;
     border: none;
     background: var(--blue);
